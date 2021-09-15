@@ -11,6 +11,20 @@ public class Veiculo{
     Modelo = mod;
     Valor = v;
     AnoFabri = ano;
+  } 
+
+  public Veiculo(string c, string m, string mod, int ano){
+    Cor = c;
+    Marca = m;
+    Modelo = mod;
+    AnoFabri = ano;
+  }
+
+  public Veiculo(string c, string m, string mod, double valor){
+    Cor = c;
+    Marca = m;
+    Modelo = mod;
+    Valor = valor;
   }
 
   public virtual void definirValorVeiculo(double CustoFixo){

@@ -39,10 +39,11 @@ class Concessionaria{
     CarrosDisponiveis.Add(carro);
   }
 
-  public void CalcularPortifolio(){
+  public double CalcularPortifolio(){
     double soma = 0;
     for (int i = 0; i < CarrosDisponiveis.Count; i++){
       soma += CarrosDisponiveis[i].Valor;
     }
+    return soma;
   }
 }
